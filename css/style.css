@@ -1,0 +1,22 @@
+/***** font ******/
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
