@@ -51,27 +51,27 @@
         </nav>
     </header>
 
-    <main class="container-md">
+    <main class="container-md pb-5">
         <h1 class="py-4">Nuovo Libro</h1>
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputNautore" class="form-label"><h5>Nome autore</h5></label>
-                <input type="text" class="form-control" id="inputNautore" placeholder="Inserisci il nome dell'autore">
+                <input type="text" class="form-control" id="inputNautore" name="inputNautore" placeholder="Inserisci il nome dell'autore">
             </div>
 
             <div class="col-md-6">
                 <label for="inputCautore" class="form-label"><h5>Cognome autore</h5></label>
-                <input type="text" class="form-control" id="inputCautore" placeholder="Inserisci il cognome dell'autore">
+                <input type="text" class="form-control" id="inputCautore" name="inputCautore" placeholder="Inserisci il cognome dell'autore">
             </div>
 
             <div class="col-12">
                 <label for="inputTitolo" class="form-label"><h5>Titolo</h5></label>
-                <input type="text" class="form-control" id="inputTitolo" placeholder="Inserisci il titolo del libro">
+                <input type="text" class="form-control" id="inputTitolo" name="inputTitolo" placeholder="Inserisci il titolo del libro">
             </div>
             
             <div class="col-md-4">
                 <label for="inputState" class="form-label"><h5>Genere</h5></label>
-                <select id="inputState" class="form-select">
+                <select id="inputState" name="inputState" class="form-select">
                   <option selected>Scegli genere</option>
                   <option>Narrativa</option>
                   <option>Fantasy</option>
@@ -86,19 +86,19 @@
                 <input class="form-control text-muted mt-2" type="date" id="dateStandard" name="dateStandard">
             </div>
 
-            <div class="col-md-4">
-              <label for="inputZip" class="form-label"><h5>ISBN#</h5></label>
-              <input type="text" class="form-control" id="inputZip">
+            <div class="col-lg-4 form-outline">
+                <label class="form-floating text-uppercase" for="input-isbn"><h5>ISBN#</h5></label>
+                <input type="number" id="input-isbn" class="form-control" name="input-isbn" maxlength="16"/>
             </div>
-            
+
             <div class="col-12">
                 <h5>Note</h5>
-                <textarea class="form-text" name="message" style="border-color: rgb(218, 218, 218); width:100%; height:70px;" placeholder=" Inserisci eventuali note sul libro"></textarea>
+                <textarea class="form-text" id="message" name="message" style="border-color: rgb(218, 218, 218); width:100%; height:70px;" placeholder=" Inserisci eventuali note sul libro"></textarea>
             </div>
 
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
                     <h5>Disponibile anche in digitale</h5>
                 </label>
